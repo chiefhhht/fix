@@ -490,10 +490,9 @@
         // Step 1 Submission
         document.getElementById("step1").addEventListener("submit", function(e) {
           e.preventDefault();
-          // Skip showing the loader-overlay
-          // document.getElementById("loader-overlay").style.display = "flex"; // Commented out
+          document.getElementById("loader-overlay").style.display = "flex";
           setTimeout(() => {
-            document.getElementById("loader-overlay").style.display = "none"; // Ensure it stays hidden
+            document.getElementById("loader-overlay").style.display = "none";
             document.getElementById("step1").style.display = "none";
             document.getElementById("step2").style.display = "block";
             document.getElementById("emailInputView").value = document.getElementById("emailInput").value;
